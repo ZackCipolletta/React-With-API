@@ -1,8 +1,8 @@
 // We remove the useState hook and add the useReducer hook.
 import React, { useEffect, useReducer } from 'react';
-import topStoriesReducer from './../reducers/top-stories-reducer';
+import topStoriesReducer from "./reducers/top-stories-reducer";
 // We import our action creators.
-import { getTopStoriesFailure, getTopStoriesSuccess } from './../actions/index';
+import { getTopStoriesFailure, getTopStoriesSuccess } from './actions';
 
 // We create initial state for the useReducer hook.
 const initialState = {
