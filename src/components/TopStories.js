@@ -21,6 +21,7 @@ function TopStories() {
         if (!response.ok) {
           throw new Error(`${response.status}: ${response.statusText}`);
         } else {
+          console.log(response);
           return response.json();
         }
       })
@@ -38,6 +39,8 @@ function TopStories() {
 
   // we destructure error, isLoaded, and topStories from the state variable.
   const { error, isLoaded, topStories } = state;
+
+  console.log(topStories);
 
   if (error) {
     return <h1>Error: {error}</h1>;
